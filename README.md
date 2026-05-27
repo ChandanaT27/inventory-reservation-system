@@ -14,11 +14,16 @@ Features
 8.Reservation status tracking
 9.Responsive dashboard UI
 
-Screenshots
-
+### Screenshots
+### Home Page
 <img width="1378" height="730" alt="image" src="https://github.com/user-attachments/assets/ed09fa84-305b-4f34-9808-ff6ad8c88147" />
+### Reservation Page
 <img width="1599" height="988" alt="image" src="https://github.com/user-attachments/assets/f616002b-40c0-4f5e-add3-138a303b8b40" />
+
+### Purchase Successfull Page
 <img width="1350" height="801" alt="image" src="https://github.com/user-attachments/assets/53b5ea54-a741-4496-b80a-f2e80d42dbbe" />
+
+### Updated Stock After Reservation
 <img width="1599" height="848" alt="image" src="https://github.com/user-attachments/assets/066a07e7-d23a-4d7a-b874-a170e84d6017" />
 
 
