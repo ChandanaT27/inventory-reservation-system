@@ -44,10 +44,7 @@ prisma/
  
 Installation
 
-Clone the repository:
 
-git clone https://github.com/your-username/inventory-reservation-system.git
-cd inventory-reservation-system
 
 Install dependencies:
 
