@@ -1,4 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Inventory Reservation System
+
+A full-stack Inventory Reservation System built with Next.js, TypeScript, Prisma, and PostgreSQL.
+This project allows users to reserve products, confirm reservations, and automatically release expired reservations while preventing overselling using database transactions.
+
+Features
+1.View available products
+2.Reserve stock dynamically
+3.Prevent overselling with Prisma transactions
+4.Confirm reservations
+5.Release expired reservations
+6.Auto-expiry timer (5 minutes)
+7.Real-time stock updates
+8.Reservation status tracking
+9.Responsive dashboard UI
+
+Tech Stack
+ Next.js 14
+ React 18
+ TypeScript
+ Prisma ORM
+ PostgreSQL (Supabase)
+ Tailwind CSS
+ Vercel Deployment
+ 
+Project Structure
+app/
+ ├── api/
+ │    ├── products/
+ │    ├── reserve/
+ │    ├── confirm/[id]/
+ │    ├── release/[id]/
+ │    └── reservation/[id]/
+ ├── globals.css
+ ├── layout.tsx
+ └── page.tsx
+
+lib/
+ └── prisma.ts
+
+prisma/
+ ├── schema.prisma
+ └── seed.ts
+ 
+Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/inventory-reservation-system.git
+cd inventory-reservation-system
+
+Install dependencies:
+
+npm install
+Environment Variables
+
+Create a .env file:
+
+DATABASE_URL="your_supabase_postgresql_url"
+Prisma Setup
+
+Push schema to database:
+
+npx prisma db push
+
+Seed initial data:
+
+npx prisma db seed
+
+Generate Prisma client:
+
+npx prisma generate
+Run Development Server
+npm run dev
+
+Open:
+
+http://localhost:3000
+Production Build
+npm run build
+Deployment (Vercel)
+
+Install Vercel CLI:
+
+npm install -g vercel
+
+Deploy:
+
+vercel
+
+Production deployment:
+
+vercel --prod
+
+API Routes
+Method	Route	Description
+GET	/api/products	Fetch all products
+POST	/api/reserve	Reserve stock
+POST	/api/confirm/[id]	Confirm reservation
+POST	/api/release/[id]	Release reservation
+GET	/api/reservation/[id]	Get reservation details
+Key Concepts
+Reservation Flow
+User reserves stock
+Reserved quantity is locked
+Reservation expires after 5 minutes
+User can confirm reservation
+Expired reservations can be released automatically
+Preventing Overselling
+
+This project uses:
+
+Prisma transactions
+Atomic stock updates
+Reservation validation
+
+to ensure stock consistency even during concurrent requests.
+
+Screenshots
+
+<img width="960" height="509" alt="outofstock" src="https://github.com/user-attachments/assets/4ceff2ae-ca98-461a-8e27-c14e44ef9a2e" />
+
+Author
+
+ Chandana T
+
+
+/// This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
